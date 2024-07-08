@@ -8,8 +8,8 @@ export default function Header() {
   return (
     <header className="flex w-full items-center justify-between">
       <nav>
-        <p className="font-semibold">
-          Renato<span className="text-primary font-bold">.dev</span>
+        <p className="text-xl font-semibold">
+          Renato<span className="font-bold text-primary">.dev</span>
         </p>
       </nav>
 

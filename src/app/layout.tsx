@@ -20,7 +20,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <ThemeProvider>
-          <nav className="mb-5 flex flex-col items-center border-b px-5 py-4">
+          <nav className="flex flex-col items-center border-b p-5">
             <div className="w-full max-w-6xl">
               <Header />
             </div>
