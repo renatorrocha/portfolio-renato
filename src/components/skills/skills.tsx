@@ -4,7 +4,7 @@ import { MySkills } from "@/lib/constants";
 
 export default function Skills() {
   return (
-    <section className="py-12 md:py-16">
+    <section className="py-16">
       <div className="container mx-auto px-4 md:px-6">
         <div className="space-y-6">
           <div className="space-y-2">

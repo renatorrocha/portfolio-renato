@@ -11,6 +11,7 @@ export default function NavLink({
   return (
     <Link
       href={url}
+      target="_blank"
       className={buttonVariants({ className: "gap-1", variant: "outline" })}
     >
       {children}
