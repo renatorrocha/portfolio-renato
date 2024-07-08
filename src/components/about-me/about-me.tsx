@@ -5,6 +5,7 @@ import {
   MagicWandIcon,
 } from "@radix-ui/react-icons";
 import Image from "next/image";
+import SoftSkillTag from "./soft-skill-tag";
 
 export default function AboutMe() {
   return (
@@ -26,22 +27,20 @@ export default function AboutMe() {
               </p>
 
               <div className="flex flex-wrap items-center gap-4">
-                <div className="flex items-center gap-2">
-                  <CodeIcon className="h-4 w-4 text-primary" />
-                  <span className="text-muted-foreground">
-                    Frontend Development
-                  </span>
-                </div>
+                <SoftSkillTag
+                  TagIcon={CodeIcon}
+                  tagName="Frontend Development"
+                />
 
-                <div className="flex items-center gap-2">
-                  <MagicWandIcon className="h-4 w-4 text-primary" />
-                  <span className="text-muted-foreground">Problem Solving</span>
-                </div>
+                <SoftSkillTag
+                  TagIcon={MagicWandIcon}
+                  tagName="Problem Solving"
+                />
 
-                <div className="flex items-center gap-2">
-                  <LightningBoltIcon className="h-4 w-4 text-primary" />
-                  <span className="text-muted-foreground">Proactivity</span>
-                </div>
+                <SoftSkillTag
+                  TagIcon={LightningBoltIcon}
+                  tagName="Proactivity"
+                />
               </div>
             </div>
           </div>
