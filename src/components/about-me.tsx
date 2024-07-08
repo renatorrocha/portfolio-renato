@@ -47,13 +47,13 @@ export default function AboutMe() {
           </div>
 
           <figure className="flex items-center justify-center">
-            {/* <Image
+            <Image
               src={MyProfilePic}
               alt="Renato's picture"
               width={400}
               height={400}
               className="max-w-full rounded-lg object-cover"
-            /> */}
+            />
           </figure>
         </div>
       </div>
