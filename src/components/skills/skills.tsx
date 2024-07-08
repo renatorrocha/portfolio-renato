@@ -1,4 +1,3 @@
-import { GitHubLogoIcon } from "@radix-ui/react-icons";
 import SkillsContainer from "./skills-container";
 import CategoryContainer from "./category-container";
 import { MySkills } from "@/lib/constants";
@@ -18,7 +17,7 @@ export default function Skills() {
             </p>
           </div>
 
-          <div className="grid items-center gap-6 md:grid-cols-2 lg:grid-cols-3">
+          <div className="grid items-start gap-6 md:grid-cols-2 lg:grid-cols-3">
             {MySkills.map((category) => (
               <CategoryContainer
                 categoryName={category.name}
