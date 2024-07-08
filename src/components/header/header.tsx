@@ -17,12 +17,12 @@ export default function Header() {
         <div className="flex gap-2">
           <NavLink url={GithubProfileUrl}>
             <GitHubLogoIcon />
-            <p>Github</p>
+            <p className="hidden md:inline-block">Github</p>
           </NavLink>
 
           <NavLink url={LinkedInProfileUrl}>
             <LinkedInLogoIcon />
-            <p>LinkedIn</p>
+            <p className="hidden md:inline-block">LinkedIn</p>
           </NavLink>
         </div>
 
