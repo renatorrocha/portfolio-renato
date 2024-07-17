@@ -1,4 +1,3 @@
-import SkillsContainer from "./skills-container";
 import CategoryContainer from "./category-container";
 import { MySkills } from "@/lib/constants";
 
@@ -21,16 +20,9 @@ export default function Skills() {
             {MySkills.map((category) => (
               <CategoryContainer
                 categoryName={category.name}
+                categorySkills={category.skills}
                 key={category.name}
-              >
-                {category.skills.map((skill) => (
-                  <SkillsContainer
-                    key={skill.name}
-                    SkillIcon={skill.icon}
-                    skillName={skill.name}
-                  />
-                ))}
-              </CategoryContainer>
+              />
             ))}
           </div>
         </div>

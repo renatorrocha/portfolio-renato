@@ -1,8 +1,10 @@
+import { Skill } from "@/types";
+
 export default function CategoryContainer({
-  children,
   categoryName,
+  categorySkills,
 }: {
-  children: React.ReactNode;
+  categorySkills: Skill[];
   categoryName: string;
 }) {
   return (
@@ -12,7 +14,20 @@ export default function CategoryContainer({
       </p>
 
       <div className="grid h-[300px] w-[340px] grid-cols-3 items-center gap-4 rounded-lg border-2 border-border p-4 transition-all group-hover/category:border-primary group-hover/category:bg-muted">
-        {children}
+        {categorySkills.map((Skill) => (
+          <div
+            key={Skill.name}
+            className="group/icon flex flex-col items-center justify-center gap-2"
+          >
+            <figure className="rounded-full bg-secondary p-3 transition-all group-hover/icon:scale-110 group-hover/icon:bg-primary">
+              <Skill.icon className="text-secondary-foreground group-hover/icon:text-secondary" />
+            </figure>
+
+            <span className="truncate text-center text-sm font-medium transition-all group-hover/icon:font-bold">
+              {Skill.name}
+            </span>
+          </div>
+        ))}
       </div>
     </div>
   );

@@ -1,0 +1,4 @@
+- [ ] Animate presence in skills container
+- [ ] A random effect in background
+- [ ] Some Effects in About me Section
+- [ ] Projects section
