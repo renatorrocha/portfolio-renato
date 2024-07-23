@@ -18,16 +18,14 @@ export default function ToggleTheme() {
     return <Skeleton className="size-10 rounded-md" />;
   }
 
-  const dark = theme === "dark";
-
   return (
     <Button
       variant="outline"
       size="icon"
       className="hover:text-primary"
-      onClick={() => setTheme(dark ? "light" : "dark")}
+      onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
     >
-      {dark ? <SunIcon /> : <MoonIcon />}
+      {theme === "dark" ? <SunIcon /> : <MoonIcon />}
     </Button>
   );
 }
