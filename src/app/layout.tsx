@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/providers/themes-provider";
 import Header from "@/components/header/header";
+import { BackgroundBeams } from "@/components/bg-beams";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -26,7 +27,10 @@ export default function RootLayout({
           </nav>
 
           <main className="flex flex-col items-center">
-            <div className="w-full max-w-6xl">{children}</div>
+            <div className="relative z-10 w-full max-w-6xl">
+              {children}
+              <BackgroundBeams />
+            </div>
           </main>
         </ThemeProvider>
       </body>
