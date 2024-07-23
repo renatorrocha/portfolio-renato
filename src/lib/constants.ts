@@ -1,6 +1,7 @@
-import { GitHubLogoIcon, NotionLogoIcon } from "@radix-ui/react-icons";
+"use client";
+
+import { TechnologyCategory } from "@/types/technology-category";
 import { BsAndroid } from "react-icons/bs";
-import { DiJava } from "react-icons/di";
 import { FaJava } from "react-icons/fa";
 import {
   SiNextdotjs,
@@ -32,53 +33,53 @@ export const GithubProfileUrl = "https://github.com/renatorrocha";
 export const LinkedInProfileUrl =
   "https://www.linkedin.com/in/renato-rrodrigues/";
 
-export const MySkills = [
+export const MySkills: TechnologyCategory[] = [
   {
     name: "Languages",
     skills: [
-      { icon: SiJavascript, name: "Javascript" },
-      { icon: SiHtml5, name: "Html5" },
-      { icon: SiCss3, name: "Css3" },
-      { icon: SiTypescript, name: "Typescript" },
-      { icon: SiNodedotjs, name: "Node" },
-      { icon: FaJava, name: "Java" },
-      { icon: SiKotlin, name: "Kotlin" },
+      { Icon: SiJavascript, name: "Javascript" },
+      { Icon: SiHtml5, name: "Html5" },
+      { Icon: SiCss3, name: "Css3" },
+      { Icon: SiTypescript, name: "Typescript" },
+      { Icon: SiNodedotjs, name: "Node" },
+      { Icon: FaJava, name: "Java" },
+      { Icon: SiKotlin, name: "Kotlin" },
     ],
   },
 
   {
     name: "Libs",
     skills: [
-      { icon: SiReact, name: "React" },
-      { icon: SiStyledcomponents, name: "Styled Components" },
-      { icon: SiZod, name: "Zod" },
-      { icon: SiReacthookform, name: "Hook Form" },
-      { icon: SiShadcnui, name: "Shadcn-Ui" },
-      { icon: SiMui, name: "Mui" },
-      { icon: SiNextui, name: "Next-Ui" },
-      { icon: SiReactquery, name: "React Query" },
+      { Icon: SiReact, name: "React" },
+      { Icon: SiStyledcomponents, name: "Styled Components" },
+      { Icon: SiZod, name: "Zod" },
+      { Icon: SiReacthookform, name: "Hook Form" },
+      { Icon: SiShadcnui, name: "Shadcn-Ui" },
+      { Icon: SiMui, name: "Mui" },
+      { Icon: SiNextui, name: "Next-Ui" },
+      { Icon: SiReactquery, name: "React Query" },
     ],
   },
 
   {
     name: "Frameworks",
     skills: [
-      { icon: SiTailwindcss, name: "Tailwind" },
-      { icon: SiVite, name: "Vite" },
-      { icon: SiNextdotjs, name: "Next" },
-      { icon: SiAstro, name: "Astro" },
-      { icon: SiTauri, name: "Tauri" },
+      { Icon: SiTailwindcss, name: "Tailwind" },
+      { Icon: SiVite, name: "Vite" },
+      { Icon: SiNextdotjs, name: "Next" },
+      { Icon: SiAstro, name: "Astro" },
+      { Icon: SiTauri, name: "Tauri" },
     ],
   },
 
   {
     name: "Tools",
     skills: [
-      { icon: SiGit, name: "Git" },
-      { icon: SiNotion, name: "Notion" },
-      { icon: SiGithub, name: "Github" },
-      { icon: SiDocker, name: "Docker" },
-      { icon: BsAndroid, name: "Android Studio" },
+      { Icon: SiGit, name: "Git" },
+      { Icon: SiNotion, name: "Notion" },
+      { Icon: SiGithub, name: "Github" },
+      { Icon: SiDocker, name: "Docker" },
+      { Icon: BsAndroid, name: "Android Studio" },
     ],
   },
 ];

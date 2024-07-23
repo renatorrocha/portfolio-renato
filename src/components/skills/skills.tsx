@@ -1,5 +1,5 @@
-import CategoryContainer from "./category-container";
 import { MySkills } from "@/lib/constants";
+import TechContainer from "./tech-container";
 
 export default function Skills() {
   return (
@@ -16,14 +16,8 @@ export default function Skills() {
             </p>
           </div>
 
-          <div className="grid items-start gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {MySkills.map((category) => (
-              <CategoryContainer
-                categoryName={category.name}
-                categorySkills={category.skills}
-                key={category.name}
-              />
-            ))}
+          <div className="mx-auto max-w-5xl px-8">
+            <TechContainer techCategories={MySkills} />
           </div>
         </div>
       </div>
