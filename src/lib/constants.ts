@@ -118,4 +118,53 @@ export const DATA = {
       },
     },
   },
+  work: [
+    {
+      company: "Foursys",
+      href: "https://foursys.com.br/",
+      badges: ["Kotlin", "Java", "Android"],
+      location: "Sao Paulo, Brazil",
+      title: "Mobile Developer",
+      logoUrl: "/foursys.png",
+      start: "April 2022",
+      end: "Feb 2023",
+      description: `Foursys offers services that cater to the different stages, needs, and challenges of their clients, regardless of the lifecycle stage of their solutions or the journey they propose to the market. I worked as a Mobile Development Intern for Android with Java. During the training, we covered:
+
+      - Interface Design
+      - Programming Logic
+      - Java for Android
+      - GIT for version control of developed code
+      - Methodologies for managing Technology Projects
+      
+      > We used the following tools:
+      
+      - GitHub/GitLab - Repository
+      - Android Studio - IDE
+      - Agile Methodology - Scrum
+      - Figma/Miro
+      - Firebase`,
+    },
+    {
+      company: "Findes",
+      href: "https://findes.com.br/",
+      badges: ["React", "Typescript", "Docker"],
+      location: "Espirito Santo, Brazil",
+      title: "Software Developer",
+      logoUrl: "/findes.png",
+      start: "Aug 2023",
+      end: "Present",
+      description: `Working on software development projects as a web development intern, focusing on the front-end with TypeScript, creating responsive screens aligned with client preferences and requests. Development of projects using:
+
+      - React (with libraries like Zod and Hook Form)
+      - Vite/Next
+      - Zod
+      - React Hook Form
+      - Tanstack Query + Router
+      - Styled-Components
+      - Material UI
+      - TypeScript
+      - Docker
+      - Agile Methodology`,
+    },
+  ],
 };

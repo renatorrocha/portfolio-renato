@@ -53,12 +53,17 @@
   * {
     @apply border-border;
   }
+
   body {
     @apply bg-background text-foreground;
   }
 
   h3 code {
     @apply !text-lg md:!text-xl;
+  }
+
+  p {
+    @apply !leading-relaxed sm:!text-base text-sm;
   }
 
   pre {
@@ -70,7 +75,7 @@
   }
 
   code {
-    @apply text-sm !leading-loose md:text-base;
+    @apply text-sm !leading-normal md:text-base;
   }
 
   pre > code {
@@ -98,7 +103,7 @@
   code[data-line-numbers] > [data-line]::before {
     counter-increment: line;
     content: counter(line);
-    @apply mr-4 inline-block w-4 text-right text-gray-500;
+    @apply mr-2 inline-block w-4 text-right text-gray-500;
   }
 
   code {
@@ -108,20 +113,18 @@
   code > [data-line]::before {
     counter-increment: line;
     content: counter(line);
-
-    /* Other styling */
     display: inline-block;
     width: 1rem;
-    margin-right: 2rem;
+    margin-right: 1rem;
     text-align: right;
     color: gray;
   }
 
   code[data-line-numbers-max-digits="2"] > [data-line]::before {
-    width: 2rem;
+    width: 1.5rem;
   }
 
   code[data-line-numbers-max-digits="3"] > [data-line]::before {
-    width: 3rem;
+    width: 2rem;
   }
 }

@@ -2,8 +2,6 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/providers/themes-provider";
-import Header from "@/components/header/header";
-import { BackgroundBeams } from "@/components/bg-beams";
 import { cn } from "@/lib/utils";
 import Navbar from "@/components/navbar";
 import { TooltipProvider } from "@/components/ui/tooltip";
