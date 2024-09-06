@@ -55,8 +55,10 @@ export const DATA = {
   name: "Renato Rocha Rodrigues",
   initials: "RR",
   avatarUrl: "/my-pic.jpg",
+  resume:
+    "I'm a passionate and dedicated **software developer**, constantly seeking to enhance my skills and tackle new technological challenges. Started my career as a **Mobile Developer** focused in _Android_ and now I'm a **Frontend Developer** focused in creating responsive and modern web applications using _React_.",
   description:
-    "I'm a passionate and dedicated software developer, constantly seeking to enhance my skills and tackle new technological challenges.",
+    "Software Developer focused in Frontend. Self-taught and always eager to learn new technologies.",
   role: "Software Developer",
   location: "Espirito Santo, Brazil",
   email: "renatorrodrigues2002@gmail.com",

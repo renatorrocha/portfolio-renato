@@ -1,8 +1,8 @@
 import React from "react";
-import BlurFadeText from "../blur-fade-text";
+import BlurFadeText from "./blur-fade-text";
 import { BLUR_FADE_DELAY, DATA } from "@/lib/constants";
-import BlurFade from "../blur-fade";
-import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar";
+import BlurFade from "./blur-fade";
+import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
 
 export default function HeroSection() {
   return (
@@ -18,14 +18,14 @@ export default function HeroSection() {
             />
 
             <BlurFadeText
-              className="max-w-[600px] md:text-xl"
+              className="max-w-[600px] text-secondary md:text-xl"
               delay={BLUR_FADE_DELAY}
               text={DATA.description}
             />
           </div>
 
           <BlurFade delay={BLUR_FADE_DELAY}>
-            <Avatar className="size-36 rounded-lg border">
+            <Avatar className="size-36 border">
               <AvatarImage alt={DATA.name} src={DATA.avatarUrl} />
               <AvatarFallback>{DATA.initials}</AvatarFallback>
             </Avatar>
