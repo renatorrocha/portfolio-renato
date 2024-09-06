@@ -6,7 +6,7 @@ export default function AboutSection() {
   return (
     <section id="about">
       <BlurFade delay={BLUR_FADE_DELAY * 3}>
-        <h2 className="text-xl font-bold">About</h2>
+        <h2 className="text-xl font-bold">About Me</h2>
       </BlurFade>
 
       <BlurFade delay={BLUR_FADE_DELAY * 4}>
