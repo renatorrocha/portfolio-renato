@@ -66,7 +66,7 @@ export function WorkCard({
                   <span className="inline-flex gap-x-2">
                     {badges.map((badge, index) => (
                       <Badge
-                        variant="secondary"
+                        variant="outline"
                         className="align-middle text-xs"
                         key={index}
                       >
