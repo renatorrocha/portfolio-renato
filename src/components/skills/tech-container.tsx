@@ -13,11 +13,11 @@ export default function TechContainer({
   let [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
   return (
-    <div className="grid grid-cols-1 justify-center self-center md:grid-cols-2 lg:grid-cols-3">
+    <div className="flex flex-wrap justify-center self-center">
       {techCategories.map((techCategory, index) => (
         <div
           key={techCategory.name}
-          className="group relative block h-full w-full p-2"
+          className="group relative block h-[360px] w-[320px] p-2"
           onMouseEnter={() => setHoveredIndex(index)}
           onMouseLeave={() => setHoveredIndex(null)}
         >
