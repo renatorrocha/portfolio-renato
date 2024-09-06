@@ -1,5 +1,5 @@
 import { BLUR_FADE_DELAY, DATA } from "@/lib/constants";
-import BlurFade from "./blur-fade";
+import BlurFade from "../blur-fade";
 import Markdown from "react-markdown";
 
 export default function AboutSection() {

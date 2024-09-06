@@ -5,6 +5,8 @@ import { ThemeProvider } from "@/providers/themes-provider";
 import Header from "@/components/header/header";
 import { BackgroundBeams } from "@/components/bg-beams";
 import { cn } from "@/lib/utils";
+import Navbar from "@/components/navbar";
+import { TooltipProvider } from "@/components/ui/tooltip";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -25,7 +27,12 @@ export default function RootLayout({
           "mx-auto min-h-screen max-w-2xl bg-background px-6 py-12 font-sans antialiased sm:py-16",
         )}
       >
-        <ThemeProvider>{children}</ThemeProvider>
+        <ThemeProvider>
+          <TooltipProvider delayDuration={0}>
+            {children}
+            <Navbar />
+          </TooltipProvider>
+        </ThemeProvider>
       </body>
     </html>
   );

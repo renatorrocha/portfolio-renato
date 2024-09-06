@@ -1,4 +1,4 @@
-import ToggleTheme from "./toggle-themes";
+import ToggleTheme from "../theme-toggle";
 import { GithubProfileUrl, LinkedInProfileUrl } from "@/lib/constants";
 import { Separator } from "../ui/separator";
 import NavLink from "./nav-link";

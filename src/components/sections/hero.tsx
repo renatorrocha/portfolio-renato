@@ -1,8 +1,8 @@
 import React from "react";
-import BlurFadeText from "./blur-fade-text";
+import BlurFadeText from "../blur-fade-text";
 import { BLUR_FADE_DELAY, DATA } from "@/lib/constants";
-import BlurFade from "./blur-fade";
-import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
+import BlurFade from "../blur-fade";
+import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar";
 
 export default function HeroSection() {
   return (

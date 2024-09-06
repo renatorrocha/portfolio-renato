@@ -1,3 +1,11 @@
+import {
+  FileTextIcon,
+  GitHubLogoIcon,
+  HomeIcon,
+  LinkedInLogoIcon,
+} from "@radix-ui/react-icons";
+import { GiNotebook } from "react-icons/gi";
+
 export const BLUR_FADE_DELAY = 0.1;
 
 // export const MySkills: TechnologyCategory[] = [
@@ -61,10 +69,7 @@ export const DATA = {
     "Software Developer focused in Frontend. Self-taught and always eager to learn new technologies.",
   role: "Software Developer",
   location: "Espirito Santo, Brazil",
-  email: "renatorrodrigues2002@gmail.com",
-  phone: "(27) 99311-7272",
-  linkedin: "https://www.linkedin.com/in/renato-rrodrigues/",
-  github: "https://github.com/renatorrocha",
+
   skills: [
     "React",
     "Next",
@@ -83,4 +88,34 @@ export const DATA = {
     "Android",
     "Nginx",
   ],
+  navbar: [
+    {
+      href: "/",
+      icon: HomeIcon,
+      label: "Home",
+    },
+    {
+      href: "/blog",
+      icon: FileTextIcon,
+      label: "Blog",
+    },
+  ],
+  contact: {
+    email: "renatorrodrigues2002@gmail.com",
+    phone: "(27) 99311-7272",
+    social: {
+      Linkedin: {
+        name: "Linkedin",
+        url: "https://www.linkedin.com/in/renato-rrodrigues/",
+        icon: LinkedInLogoIcon,
+        navbar: true,
+      },
+      Github: {
+        name: "Github",
+        url: "https://github.com/renatorrocha",
+        icon: GitHubLogoIcon,
+        navbar: true,
+      },
+    },
+  },
 };
