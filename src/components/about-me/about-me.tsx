@@ -19,7 +19,7 @@ export default function AboutMe() {
               </h2>
 
               <p className="text-muted-foreground md:text-lg">
-                Hi, I&apos;m Renato Rocha, a passionate frontend engineer with a
+                , a passionate frontend engineer with a
                 keen eye for design and a love for crafting beautiful,
                 user-friendly web experiences. With almost 2 years of
                 experience, I&apos;ve honed my skills in modern web

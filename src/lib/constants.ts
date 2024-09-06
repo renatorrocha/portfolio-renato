@@ -1,85 +1,84 @@
-"use client";
+export const BLUR_FADE_DELAY = 0.1;
 
-import { TechnologyCategory } from "@/types/technology-category";
-import { BsAndroid } from "react-icons/bs";
-import { FaJava } from "react-icons/fa";
-import {
-  SiNextdotjs,
-  SiJavascript,
-  SiTypescript,
-  SiHtml5,
-  SiCss3,
-  SiTailwindcss,
-  SiVite,
-  SiAstro,
-  SiTauri,
-  SiStyledcomponents,
-  SiReact,
-  SiZod,
-  SiReacthookform,
-  SiShadcnui,
-  SiMui,
-  SiNextui,
-  SiNodedotjs,
-  SiKotlin,
-  SiReactquery,
-  SiGit,
-  SiDocker,
-  SiNotion,
-  SiGithub,
-} from "react-icons/si";
+// export const MySkills: TechnologyCategory[] = [
+//   {
+//     name: "Languages",
+//     skills: [
+//       { Icon: SiJavascript, name: "Javascript" },
+//       { Icon: SiHtml5, name: "Html5" },
+//       { Icon: SiCss3, name: "Css3" },
+//       { Icon: SiTypescript, name: "Typescript" },
+//       { Icon: SiNodedotjs, name: "Node" },
+//       { Icon: FaJava, name: "Java" },
+//       { Icon: SiKotlin, name: "Kotlin" },
+//     ],
+//   },
 
-export const GithubProfileUrl = "https://github.com/renatorrocha";
-export const LinkedInProfileUrl =
-  "https://www.linkedin.com/in/renato-rrodrigues/";
+//   {
+//     name: "Libs",
+//     skills: [
+//       { Icon: SiReact, name: "React" },
+//       { Icon: SiStyledcomponents, name: "Styled Components" },
+//       { Icon: SiZod, name: "Zod" },
+//       { Icon: SiReacthookform, name: "Hook Form" },
+//       { Icon: SiShadcnui, name: "Shadcn-Ui" },
+//       { Icon: SiMui, name: "Mui" },
+//       { Icon: SiNextui, name: "Next-Ui" },
+//       { Icon: SiReactquery, name: "React Query" },
+//     ],
+//   },
 
-export const MySkills: TechnologyCategory[] = [
-  {
-    name: "Languages",
-    skills: [
-      { Icon: SiJavascript, name: "Javascript" },
-      { Icon: SiHtml5, name: "Html5" },
-      { Icon: SiCss3, name: "Css3" },
-      { Icon: SiTypescript, name: "Typescript" },
-      { Icon: SiNodedotjs, name: "Node" },
-      { Icon: FaJava, name: "Java" },
-      { Icon: SiKotlin, name: "Kotlin" },
-    ],
-  },
+//   {
+//     name: "Frameworks",
+//     skills: [
+//       { Icon: SiTailwindcss, name: "Tailwind" },
+//       { Icon: SiVite, name: "Vite" },
+//       { Icon: SiNextdotjs, name: "Next" },
+//       { Icon: SiAstro, name: "Astro" },
+//       { Icon: SiTauri, name: "Tauri" },
+//     ],
+//   },
 
-  {
-    name: "Libs",
-    skills: [
-      { Icon: SiReact, name: "React" },
-      { Icon: SiStyledcomponents, name: "Styled Components" },
-      { Icon: SiZod, name: "Zod" },
-      { Icon: SiReacthookform, name: "Hook Form" },
-      { Icon: SiShadcnui, name: "Shadcn-Ui" },
-      { Icon: SiMui, name: "Mui" },
-      { Icon: SiNextui, name: "Next-Ui" },
-      { Icon: SiReactquery, name: "React Query" },
-    ],
-  },
+//   {
+//     name: "Tools",
+//     skills: [
+//       { Icon: SiGit, name: "Git" },
+//       { Icon: SiNotion, name: "Notion" },
+//       { Icon: SiGithub, name: "Github" },
+//       { Icon: SiDocker, name: "Docker" },
+//       { Icon: BsAndroid, name: "Android Studio" },
+//     ],
+//   },
+// ];
 
-  {
-    name: "Frameworks",
-    skills: [
-      { Icon: SiTailwindcss, name: "Tailwind" },
-      { Icon: SiVite, name: "Vite" },
-      { Icon: SiNextdotjs, name: "Next" },
-      { Icon: SiAstro, name: "Astro" },
-      { Icon: SiTauri, name: "Tauri" },
-    ],
-  },
-
-  {
-    name: "Tools",
-    skills: [
-      { Icon: SiGit, name: "Git" },
-      { Icon: SiNotion, name: "Notion" },
-      { Icon: SiGithub, name: "Github" },
-      { Icon: SiDocker, name: "Docker" },
-      { Icon: BsAndroid, name: "Android Studio" },
-    ],
-  },
-];
+export const DATA = {
+  name: "Renato Rocha Rodrigues",
+  initials: "RR",
+  avatarUrl: "/my-pic.jpg",
+  description:
+    "I'm a passionate and dedicated software developer, constantly seeking to enhance my skills and tackle new technological challenges.",
+  role: "Software Developer",
+  location: "Espirito Santo, Brazil",
+  email: "renatorrodrigues2002@gmail.com",
+  phone: "(27) 99311-7272",
+  linkedin: "https://www.linkedin.com/in/renato-rrodrigues/",
+  github: "https://github.com/renatorrocha",
+  skills: [
+    "React",
+    "Next",
+    "Typescript",
+    "Tailwind",
+    "Astro",
+    "Vite",
+    "Git",
+    "Docker",
+    "PostgreSQL",
+    "Node",
+    "Prisma",
+    "Jest",
+    "Java",
+    "Kotlin",
+    "Android",
+    "Nginx",
+  ],
+};

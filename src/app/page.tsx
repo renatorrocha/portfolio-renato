@@ -1,15 +1,11 @@
 import AboutMe from "@/components/about-me/about-me";
-import Projects from '@/components/projects/projects';
+import HeroSection from "@/components/hero/hero-section";
 import Skills from "@/components/skills/skills";
 
 export default function Home() {
   return (
-    <main className="flex flex-col gap-2">
-      <AboutMe />
-
-      <Skills />
-
-      <Projects />
+    <main className="flex min-h-[100dvh] flex-col space-y-10">
+      <HeroSection />
     </main>
   );
 }
