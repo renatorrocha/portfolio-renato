@@ -64,11 +64,11 @@ export default function Navbar() {
         <Separator orientation="vertical" className="h-full py-2" />
         <DockIcon>
           <Tooltip>
-            <TooltipTrigger asChild>
+            <TooltipTrigger>
               <ThemeToggle />
             </TooltipTrigger>
             <TooltipContent>
-              <p>Theme</p>
+              <p>Change Theme</p>
             </TooltipContent>
           </Tooltip>
         </DockIcon>

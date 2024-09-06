@@ -94,11 +94,11 @@ export const DATA = {
       icon: HomeIcon,
       label: "Home",
     },
-    {
-      href: "/blog",
-      icon: FileTextIcon,
-      label: "Blog",
-    },
+    // {
+    //   href: "/blog",
+    //   icon: FileTextIcon,
+    //   label: "Blog",
+    // },
   ],
   contact: {
     email: "renatorrodrigues2002@gmail.com",
