@@ -21,7 +21,7 @@ interface IResumeCard {
   description?: string;
 }
 
-export function WorkCard({
+export function ResumeCard({
   logoUrl,
   altText,
   title,
@@ -43,6 +43,7 @@ export function WorkCard({
   return (
     <Link
       href={href || "#"}
+      target="_blank"
       className="block cursor-pointer"
       onClick={handleClick}
     >

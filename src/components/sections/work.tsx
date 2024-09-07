@@ -1,7 +1,7 @@
 import React from "react";
 import BlurFade from "../blur-fade";
 import { BLUR_FADE_DELAY, DATA } from "@/lib/constants";
-import { WorkCard } from "../work-card";
+import { ResumeCard } from "../resume-card";
 
 export default function WorkSection() {
   return (
@@ -12,7 +12,7 @@ export default function WorkSection() {
         </BlurFade>
         {DATA.work.map((work, id) => (
           <BlurFade key={work.company} delay={BLUR_FADE_DELAY * 6 + id * 0.05}>
-            <WorkCard
+            <ResumeCard
               key={work.company}
               logoUrl={work.logoUrl}
               altText={work.company}

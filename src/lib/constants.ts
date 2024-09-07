@@ -167,4 +167,22 @@ export const DATA = {
       - Agile Methodology`,
     },
   ],
+  education: [
+    {
+      institution: "Multivix",
+      href: "https://multivix.com.br/",
+      degree: "Software Analysis and Development",
+      logoUrl: "/multivix.png",
+      start: "Jul 2022",
+      end: "Nov 2024",
+    },
+    {
+      institution: "Rocketseat + Sirius",
+      href: "https://rocketseat.com.br/",
+      degree: "MBA in Fullstack Development",
+      logoUrl: "/rocketseat.png",
+      start: "Aug 2024",
+      end: "Aug 2025",
+    },
+  ],
 };
