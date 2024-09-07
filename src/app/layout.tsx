@@ -2,8 +2,9 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/providers/themes-provider";
-import Header from "@/components/header/header";
-import { BackgroundBeams } from "@/components/bg-beams";
+import { cn } from "@/lib/utils";
+import Navbar from "@/components/navbar";
+import { TooltipProvider } from "@/components/ui/tooltip";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,20 +19,17 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body
+        className={cn(
+          inter.className,
+          "mx-auto min-h-screen max-w-2xl bg-background px-6 py-12 font-sans antialiased sm:py-16",
+        )}
+      >
         <ThemeProvider>
-          <nav className="flex flex-col items-center border-b p-5">
-            <div className="w-full max-w-6xl">
-              <Header />
-            </div>
-          </nav>
-
-          <main className="flex flex-col items-center">
-            <div className="relative z-10 w-full max-w-6xl">
-              {children}
-              <BackgroundBeams />
-            </div>
-          </main>
+          <TooltipProvider delayDuration={0}>
+            {children}
+            <Navbar />
+          </TooltipProvider>
         </ThemeProvider>
       </body>
     </html>

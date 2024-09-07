@@ -5,21 +5,21 @@
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --foreground: 220 90% 15%;
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 220 90% 15%;
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 220 90% 15%;
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
     --primary: 220.47 98.26% 36.08%;
     --primary-foreground: 210 40% 98%;
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
-    --accent: 210 40% 90%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --secondary: 210 60% 70%;
+    --secondary-foreground: 220 90% 20%;
+    --accent: 210 40% 95%;
+    --accent-foreground: 220 90% 20%;
     --destructive: 0 92.99% 56.11%;
     --destructive-foreground: 210 40% 98%;
     --ring: 220.67 97.83% 36.08%;
@@ -41,7 +41,7 @@
     --primary-foreground: 0 0% 20%;
     --secondary: 225.45 71.22% 72.75%;
     --secondary-foreground: 234.55 17.46% 12.35%;
-    --accent: 234.55 17.83% 13.47%;
+    --accent: 234.55 17.83% 11.47%;
     --accent-foreground: 0 0% 82.75%;
     --destructive: 1.58 47.5% 52.94%;
     --destructive-foreground: 210 40% 98.04%;
@@ -53,7 +53,78 @@
   * {
     @apply border-border;
   }
+
   body {
     @apply bg-background text-foreground;
+  }
+
+  h3 code {
+    @apply !text-lg md:!text-xl;
+  }
+
+  p {
+    @apply !leading-relaxed sm:!text-base text-sm;
+  }
+
+  pre {
+    @apply overflow-x-auto rounded-lg !px-0 py-4;
+  }
+
+  pre [data-line] {
+    @apply px-4;
+  }
+
+  code {
+    @apply text-sm !leading-normal md:text-base;
+  }
+
+  pre > code {
+    counter-reset: line;
+  }
+
+  code[data-theme*=" "],
+  code[data-theme*=" "] span {
+    color: var(--shiki-light);
+    background-color: var(--shiki-light-bg);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    code[data-theme*=" "],
+    code[data-theme*=" "] span {
+      color: var(--shiki-dark);
+      background-color: var(--shiki-dark-bg);
+    }
+  }
+
+  code[data-line-numbers] {
+    counter-reset: line;
+  }
+
+  code[data-line-numbers] > [data-line]::before {
+    counter-increment: line;
+    content: counter(line);
+    @apply mr-2 inline-block w-4 text-right text-gray-500;
+  }
+
+  code {
+    counter-reset: line;
+  }
+
+  code > [data-line]::before {
+    counter-increment: line;
+    content: counter(line);
+    display: inline-block;
+    width: 1rem;
+    margin-right: 1rem;
+    text-align: right;
+    color: gray;
+  }
+
+  code[data-line-numbers-max-digits="2"] > [data-line]::before {
+    width: 1.5rem;
+  }
+
+  code[data-line-numbers-max-digits="3"] > [data-line]::before {
+    width: 2rem;
   }
 }
