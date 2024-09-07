@@ -170,7 +170,7 @@ export const DATA = {
   education: [
     {
       institution: "Multivix",
-      href: "https://multivix.com.br/",
+      href: "https://multivix.edu.br/",
       degree: "Software Analysis and Development",
       logoUrl: "/multivix.png",
       start: "Jul 2022",
@@ -178,7 +178,7 @@ export const DATA = {
     },
     {
       institution: "Rocketseat + Sirius",
-      href: "https://rocketseat.com.br/",
+      href: "https://www.rocketseat.com.br/",
       degree: "MBA in Fullstack Development",
       logoUrl: "/rocketseat.png",
       start: "Aug 2024",
