@@ -10,6 +10,7 @@ export default function WorkSection() {
         <BlurFade delay={BLUR_FADE_DELAY * 5}>
           <h2 className="text-xl font-bold">Professional Experience</h2>
         </BlurFade>
+
         {DATA.work.map((work, id) => (
           <BlurFade key={work.company} delay={BLUR_FADE_DELAY * 6 + id * 0.05}>
             <ResumeCard
