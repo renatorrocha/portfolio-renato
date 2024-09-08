@@ -219,7 +219,7 @@ export const DATA = {
       href: "https://dg-rei-das-palhas.up.railway.app/",
       active: false,
       description:
-        "A comprehensive website for a local confectionery company, featuring an engaging landing page for product showcase and a robust admin panel for efficient management of products and transactions.",
+        "A comprehensive website for a local _confectionery company_, featuring an engaging **landing page** for product showcase and a robust **admin panel** for efficient management of products and transactions.",
       technologies: [
         "Next.js",
         "Typescript",
