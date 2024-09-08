@@ -185,4 +185,63 @@ export const DATA = {
       end: "Aug 2025",
     },
   ],
+  projects: [
+    {
+      title: "ShowScout",
+      href: "https://spot-show.vercel.app/",
+      active: false,
+      description:
+        "**ShowScout** is a web application that allows users to log in with their _Spotify_ account and view upcoming shows of their favorite artists. The application leverages the **Spotify API** to fetch the list of artists the user follows and displays their upcoming concerts using the **TicketMaster API**.",
+      technologies: [
+        "Next.js",
+        "Typescript",
+        "TailwindCSS",
+        "NextAuth",
+        "Shadcn UI",
+        "Spotify API",
+        "TicketMaster API",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://spot-show.vercel.app/",
+        },
+        {
+          type: "Code",
+          href: "https://github.com/renatorrocha/ShowScout",
+        },
+      ],
+      image: "",
+      video: "",
+    },
+    {
+      title: "Dg Rei da Palha",
+      href: "https://dg-rei-das-palhas.up.railway.app/",
+      active: false,
+      description:
+        "A comprehensive website for a local confectionery company, featuring an engaging landing page for product showcase and a robust admin panel for efficient management of products and transactions.",
+      technologies: [
+        "Next.js",
+        "Typescript",
+        "TailwindCSS",
+        "Clerk",
+        "Prisma",
+        "Tanstack Query",
+        "Shadcn UI",
+        "Framer Motion",
+        "React Hook Form",
+        "Zod",
+        "Railway",
+        "PostgreSQL",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://dg-rei-das-palhas.up.railway.app/",
+        },
+      ],
+      image: "",
+      video: "",
+    },
+  ],
 };

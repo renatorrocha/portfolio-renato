@@ -47,8 +47,8 @@ export function ResumeCard({
       className="block cursor-pointer"
       onClick={handleClick}
     >
-      <Card className="flex p-4">
-        <div className="flex-none">
+      <Card className="flex flex-col p-4 sm:flex-row">
+        <div className="mb-4 flex-none sm:mb-0">
           <Avatar className="bg-muted-background m-auto size-12 border-0 dark:bg-foreground">
             <AvatarImage
               src={logoUrl}
@@ -64,7 +64,7 @@ export function ResumeCard({
               <h3 className="inline-flex items-center justify-center gap-2 text-xs font-semibold leading-none sm:text-sm">
                 {title}
                 {badges && (
-                  <span className="inline-flex gap-x-2">
+                  <span className="hidden gap-x-2 md:inline-flex">
                     {badges.map((badge, index) => (
                       <Badge
                         variant="outline"
@@ -103,7 +103,14 @@ export function ResumeCard({
               }}
               className="mt-2 text-xs sm:text-sm"
             >
-              <Markdown>{description}</Markdown>
+              <Markdown
+                className={cn(
+                  isExpanded ? "block" : "hidden",
+                  "prose prose-sm sm:prose md:prose-base lg:prose-lg max-w-none",
+                )}
+              >
+                {description}
+              </Markdown>
             </motion.div>
           )}
         </div>
