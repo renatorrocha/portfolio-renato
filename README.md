@@ -1,3 +1,13 @@
+### Portfolio Overview
+
+Welcome to my portfolio!
+
+This collection showcases my skills and projects in **web development**.
+
+Utilizing technologies like **React** and **TypeScript**, I aim to create seamless and engaging applications.
+
+> Explore my work and feel free to reach out for collaborations or inquiries.
+
 ### Features
 
 - Responsive design
@@ -11,7 +21,7 @@
 
 ### ScreenShot
 
-![Portfolio Screenshot](/project-screenshot.png)
+![Portfolio Screenshot](./public/project-screenshot.png)
 
 ### Technologies Used
 
@@ -24,7 +34,9 @@
 
 ### Contact
 
-For any inquiries, you can reach me at [your-email@example.com](mailto:your-email@example.com).
+For any assistance or collaboration, you can reach me at [renatorrodrigues2002@gmail.com](mailto:renatorrodrigues2002@gmail.com).
+
+I'm also available on **LinkedIn**: [Renato Rocha](https://www.linkedin.com/in/renato-rrodrigues/). Feel free to connect!
 
 ---
 
