@@ -37,7 +37,7 @@ export const DATA = {
     "Android",
     "Nginx",
     "Bun",
-    "Elysia"
+    "Elysia",
   ],
   navbar: [
     {
@@ -125,7 +125,7 @@ export const DATA = {
       degree: "Software Analysis and Development",
       logoUrl: "/multivix.png",
       start: "Jul 2022",
-      end: "Nov 2024",
+      end: "sep 2024",
     },
     {
       institution: "Rocketseat + Sirius",
@@ -137,6 +137,36 @@ export const DATA = {
     },
   ],
   projects: [
+    {
+      title: "Dev-Connect",
+      href: "https://dev-connect-prod.up.railway.app/",
+      active: true,
+      description:
+        "Connect with developers from around the world and share your ideas and projects on a dynamic and interactive platform.",
+      technologies: [
+        "Next.js",
+        "Typescript",
+        "TailwindCSS",
+        "NextAuth",
+        "Prisma",
+        "Tanstack Query",
+        "Shadcn UI",
+        "TRPC",
+        "T3-Stack",
+        "React Hook Form",
+        "Zod",
+        "Railway",
+        "PostgreSQL",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://dev-connect-prod.up.railway.app/",
+        },
+      ],
+      image: "",
+      video: "",
+    },
     {
       title: "ShowScout",
       href: "https://spot-show.vercel.app/",
