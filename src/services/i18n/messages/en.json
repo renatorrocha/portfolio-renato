@@ -2,5 +2,10 @@
   "Hero": {
     "greeting": "Hi, I'm Renato 👋",
     "description": "I'm a passionate developer, working on building innovative solutions with modern technologies."
+  },
+  
+  "About": {
+    "aboutMe": "About Me",
+    "resume": "I'm a passionate and dedicated **software developer**, constantly seeking to enhance my skills and tackle new technological challenges. Started my career as a **Mobile Developer** focused in _Android_ and now I'm a **Frontend Developer** focused in creating responsive and modern web applications using _React_."
   }
 }
