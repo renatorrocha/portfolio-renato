@@ -63,7 +63,7 @@
   }
 
   p {
-    @apply !leading-relaxed sm:!text-base text-sm;
+    @apply text-sm !leading-relaxed sm:!text-base;
   }
 
   pre {
@@ -126,5 +126,19 @@
 
   code[data-line-numbers-max-digits="3"] > [data-line]::before {
     width: 2rem;
+  }
+
+  .prose ul,
+  .prose ol {
+    list-style-position: inside;
+    padding-left: 1.25rem;
+  }
+
+  .prose ul li {
+    list-style-type: disc;
+  }
+
+  .prose ol li {
+    list-style-type: decimal;
   }
 }
