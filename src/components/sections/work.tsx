@@ -1,5 +1,5 @@
 import BlurFade from "../blur-fade";
-import { BLUR_FADE_DELAY, DATA } from "@/lib/constants";
+import { BLUR_FADE_DELAY } from "@/lib/constants";
 import { ResumeCard } from "../resume-card";
 import { useMessages, useTranslations } from "next-intl";
 

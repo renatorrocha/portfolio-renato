@@ -54,5 +54,97 @@
         "end": "Ago 2025"
       }
     ]
+  },
+  "Project": {
+    "title": "Meus Projetos",
+    "subtitle": "Confira meu",
+    "highlight": "trabalho mais recente",
+    "description": "Aqui estão alguns dos meus projetos favoritos em que trabalhei.",
+    "projects": [
+      {
+        "title": "Dev-Connect",
+        "href": "https://dev-connect-prod.up.railway.app/",
+        "active": true,
+        "description": "Conecte-se com desenvolvedores de todo o mundo e compartilhe suas ideias e projetos em uma plataforma dinâmica e interativa.",
+        "technologies": [
+          "Next.js",
+          "Typescript",
+          "TailwindCSS",
+          "NextAuth",
+          "Prisma",
+          "Tanstack Query",
+          "Shadcn UI",
+          "TRPC",
+          "T3-Stack",
+          "React Hook Form",
+          "Zod",
+          "Railway",
+          "PostgreSQL"
+        ],
+        "links": [
+          {
+            "type": "Website",
+            "href": "https://dev-connect-prod.up.railway.app/"
+          }
+        ],
+        "image": "",
+        "video": ""
+      },
+      {
+        "title": "ShowScout",
+        "href": "https://spot-show.vercel.app/",
+        "active": false,
+        "description": "ShowScout é uma aplicação web que permite aos usuários fazer login com sua conta Spotify e visualizar os shows futuros de seus artistas favoritos. A aplicação utiliza a API do Spotify para buscar a lista de artistas que o usuário segue e exibe seus próximos concertos usando a API TicketMaster.",
+        "technologies": [
+          "Next.js",
+          "Typescript",
+          "TailwindCSS",
+          "NextAuth",
+          "Shadcn UI",
+          "Spotify API",
+          "TicketMaster API"
+        ],
+        "links": [
+          {
+            "type": "Website",
+            "href": "https://spot-show.vercel.app/"
+          },
+          {
+            "type": "Código",
+            "href": "https://github.com/renatorrocha/ShowScout"
+          }
+        ],
+        "image": "",
+        "video": ""
+      },
+      {
+        "title": "Dg Rei da Palha",
+        "href": "https://dg-rei-das-palhas.up.railway.app/",
+        "active": false,
+        "description": "Um site abrangente para uma empresa de confeitaria local, com uma página de destino envolvente para exibição de produtos e um painel administrativo robusto para gerenciamento eficiente de produtos e transações.",
+        "technologies": [
+          "Next.js",
+          "Typescript",
+          "TailwindCSS",
+          "Clerk",
+          "Prisma",
+          "Tanstack Query",
+          "Shadcn UI",
+          "Framer Motion",
+          "React Hook Form",
+          "Zod",
+          "Railway",
+          "PostgreSQL"
+        ],
+        "links": [
+          {
+            "type": "Website",
+            "href": "https://dg-rei-das-palhas.up.railway.app/"
+          }
+        ],
+        "image": "",
+        "video": ""
+      }
+    ]
   }
 }

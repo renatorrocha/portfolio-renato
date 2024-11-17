@@ -1,9 +1,13 @@
 import React from "react";
 import BlurFade from "../blur-fade";
-import { BLUR_FADE_DELAY, DATA } from "@/lib/constants";
+import { BLUR_FADE_DELAY } from "@/lib/constants";
 import { ProjectCard } from "../project-card";
+import { useMessages, useTranslations } from "next-intl";
 
 export default function ProjectsSection() {
+  const t = useTranslations("Project");
+  const messages = useMessages();
+
   return (
     <section id="projects">
       <div className="w-full space-y-12 py-12">
@@ -11,19 +15,20 @@ export default function ProjectsSection() {
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <div className="space-y-2">
               <div className="inline-block rounded-lg bg-foreground px-3 py-1 text-sm text-background">
-                My Projects
+                {t("title")}
               </div>
               <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-                Check out my <span className="text-primary">latest work</span>
+                {t("subtitle")}{" "}
+                <span className="text-primary">{t("highlight")}</span>
               </h2>
               <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                Here are a few of my favorite projects that I have worked on.
+                {t("description")}
               </p>
             </div>
           </div>
         </BlurFade>
         <div className="mx-auto grid max-w-[800px] grid-cols-1 gap-3 sm:grid-cols-2">
-          {DATA.projects.map((project, id) => (
+          {messages.Project.projects.map((project, id) => (
             <BlurFade
               key={project.title}
               delay={BLUR_FADE_DELAY * 12 + id * 0.05}
