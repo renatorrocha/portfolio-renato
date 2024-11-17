@@ -1,4 +1,8 @@
 {
+  "Labels": {
+    "changeTheme": "Mudar Tema",
+    "changeLanguage": "Mudar Linguagem"
+  },
   "Hero": {
     "greeting": "Olá, eu sou o Renato 👋",
     "description": "Sou um desenvolvedor apaixonado, trabalhando na construção de soluções inovadoras com tecnologias modernas."
