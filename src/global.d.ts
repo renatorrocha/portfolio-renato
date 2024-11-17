@@ -4,4 +4,5 @@ type Messages = typeof en;
 
 declare global {
   interface IntlMessages extends Messages {}
+  interface IntlFormats extends Formats {}
 }

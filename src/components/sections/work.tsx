@@ -1,21 +1,11 @@
-import React from "react";
 import BlurFade from "../blur-fade";
 import { BLUR_FADE_DELAY, DATA } from "@/lib/constants";
 import { ResumeCard } from "../resume-card";
-import { useTranslations } from "next-intl";
+import { useMessages, useTranslations } from "next-intl";
 
 export default function WorkSection() {
   const t = useTranslations("Work");
-  const keys = [
-    "company",
-    "href",
-    "badges",
-    "logoUrl",
-    "start",
-    "end",
-    "title",
-    "description",
-  ] as const;  
+  const messages = useMessages();
 
   return (
     <section id="work">
@@ -24,7 +14,7 @@ export default function WorkSection() {
           <h2 className="text-xl font-bold">Professional Experience</h2>
         </BlurFade>
 
-        {t("experiences", { returnObjects: true }).map((work, i) => (
+        {messages.Work.experiences.map((work, i) => (
           <BlurFade key={work.company} delay={BLUR_FADE_DELAY * 6 + i * 0.05}>
             <ResumeCard
               logoUrl={work.logoUrl}
