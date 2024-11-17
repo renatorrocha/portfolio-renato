@@ -13,6 +13,7 @@ Utilizing technologies like **React** and **TypeScript**, I aim to create seamle
 - Responsive design
 - Smooth animations using Framer Motion
 - Dark and light theme toggle
+- Internationalization with next-intl
 
 > To-do
 >
@@ -30,6 +31,7 @@ Utilizing technologies like **React** and **TypeScript**, I aim to create seamle
 - TypeScript
 - Tailwind CSS
 - Framer Motion
+- Next-Intl
 - Radix UI /w Shadcn/ui
 
 ### Contact
