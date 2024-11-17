@@ -13,7 +13,32 @@ import { NextIntlClientProvider } from "next-intl";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Renato.dev",
+  title: "renato.dev | Portfolio",
+  description:
+    "Portfolio of Renato Rocha, a software developer specializing in Front-end and Mobile development with expertise in technologies like React, Next.js, and more.",
+  keywords: [
+    "Renato Rocha",
+    "Front-end Developer",
+    "Portfolio",
+    "React",
+    "Next.js",
+    "Web Developer",
+  ],
+  openGraph: {
+    title: "renato.dev | Portfolio",
+    description:
+      "Explore the portfolio of Renato Rocha, a developer dedicated to creating amazing experiences on the web and mobile devices.",
+    url: "https://renatodev.com",
+    siteName: "renato.dev",
+    images: [
+      {
+        url: "/project-screenshot.png",
+        width: 1200,
+        height: 630,
+        alt: "Renato Rocha - Developer",
+      },
+    ],
+  },
 };
 
 export default async function RootLayout({
