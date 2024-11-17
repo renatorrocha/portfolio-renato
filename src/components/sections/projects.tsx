@@ -2,12 +2,11 @@ import React from "react";
 import BlurFade from "../blur-fade";
 import { BLUR_FADE_DELAY } from "@/lib/constants";
 import { ProjectCard } from "../project-card";
-import { useTranslations } from "next-intl";
-import useMessages from "use-intl/dist/types/src/react/useMessages";
+import { useMessages, useTranslations } from "next-intl";
 
 export default function ProjectsSection() {
   const t = useTranslations("Project");
-  const messages = useMessages();
+  const messages = useMessages() as unknown as IntlMessages;
 
   return (
     <section id="projects">

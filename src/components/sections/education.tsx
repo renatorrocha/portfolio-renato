@@ -1,12 +1,11 @@
 import { BLUR_FADE_DELAY } from "@/lib/constants";
 import BlurFade from "../blur-fade";
 import { ResumeCard } from "../resume-card";
-import { useTranslations } from "next-intl";
-import useMessages from "use-intl/dist/types/src/react/useMessages";
+import { useMessages, useTranslations } from "next-intl";
 
 export default function EducationSection() {
   const t = useTranslations("Education");
-  const messages = useMessages();
+  const messages = useMessages() as unknown as IntlMessages;
 
   return (
     <section id="education">
