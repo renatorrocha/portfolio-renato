@@ -1,4 +1,4 @@
-import en from "./services/i18n/messages/en.json";
+import en from "../services/i18n/messages/en.json";
 
 type Messages = typeof en;
 
