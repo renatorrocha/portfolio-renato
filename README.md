@@ -16,7 +16,7 @@ Utilizing technologies like **React** and **TypeScript**, I aim to create seamle
 - Internationalization with next-intl
 
 > To-do
->
+> - Download curriculum option
 > - Blog section implementation
 > - Add more projects to the portfolio
 
