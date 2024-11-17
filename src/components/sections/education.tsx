@@ -5,7 +5,7 @@ import { useMessages, useTranslations } from "next-intl";
 
 export default function EducationSection() {
   const t = useTranslations("Education");
-  const messages = useMessages();
+  const messages: IntlMessages = useMessages();
 
   return (
     <section id="education">

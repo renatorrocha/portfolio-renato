@@ -6,7 +6,7 @@ import { useMessages, useTranslations } from "next-intl";
 
 export default function ProjectsSection() {
   const t = useTranslations("Project");
-  const messages = useMessages();
+  const messages: IntlMessages = useMessages();
 
   return (
     <section id="projects">
