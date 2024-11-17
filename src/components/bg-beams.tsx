@@ -78,6 +78,7 @@ export const BackgroundBeams = React.memo(() => {
             key={`path-` + index}
             d={path}
             stroke={`url(#linearGradient-${index})`}
+            className={"hidden md:block"}
             strokeOpacity="0.4"
             strokeWidth="0.5"
           ></motion.path>
