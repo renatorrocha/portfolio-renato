@@ -33,5 +33,26 @@
         "description": "Working on software development projects as a web development intern, focusing on the front-end with TypeScript, creating responsive screens aligned with client preferences and requests. Development of projects using:\n\n- React (with libraries like Zod and React Hook Form)\n- Vite/Next.js\n- Zod\n- React Hook Form\n- Tanstack Query + Router\n- Styled-Components\n- Material UI\n- TypeScript\n- Docker\n- Agile Methodology"
       }
     ]
+  },
+  "Education": {
+    "title": "Education",
+    "records": [
+      {
+        "institution": "Multivix",
+        "href": "https://multivix.edu.br/",
+        "degree": "Software Analysis and Development",
+        "logoUrl": "/multivix.png",
+        "start": "Jul 2022",
+        "end": "Sep 2024"
+      },
+      {
+        "institution": "Rocketseat + Sirius",
+        "href": "https://www.rocketseat.com.br/",
+        "degree": "MBA in Fullstack Development",
+        "logoUrl": "/rocketseat.png",
+        "start": "Aug 2024",
+        "end": "Aug 2025"
+      }
+    ]
   }
 }

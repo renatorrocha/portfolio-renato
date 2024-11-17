@@ -7,6 +7,7 @@ import { useTranslations } from "next-intl";
 
 export default function HeroSection() {
   const t = useTranslations("Hero");
+
   return (
     <section id="hero">
       <div className="mx-auto w-full max-w-2xl space-y-8">

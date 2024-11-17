@@ -33,5 +33,26 @@
         "description": "Trabalhando em projetos de desenvolvimento de software como estagiário de desenvolvimento web, com foco no front-end utilizando TypeScript, criando telas responsivas alinhadas com as preferências e solicitações dos clientes. Desenvolvimento de projetos utilizando:\n\n- React (com bibliotecas como Zod e React Hook Form)\n- Vite/Next.js\n- Zod\n- React Hook Form\n- Tanstack Query + Router\n- Styled-Components\n- Material UI\n- TypeScript\n- Docker\n- Metodologia Ágil"
       }
     ]
+  },
+  "Education": {
+    "title": "Educação",
+    "records": [
+      {
+        "institution": "Multivix",
+        "href": "https://multivix.edu.br/",
+        "degree": "Análise e Desenvolvimento de Sistemas",
+        "logoUrl": "/multivix.png",
+        "start": "Jul 2022",
+        "end": "Set 2024"
+      },
+      {
+        "institution": "Rocketseat + Sirius",
+        "href": "https://www.rocketseat.com.br/",
+        "degree": "MBA em Desenvolvimento Fullstack",
+        "logoUrl": "/rocketseat.png",
+        "start": "Ago 2024",
+        "end": "Ago 2025"
+      }
+    ]
   }
 }
