@@ -10,8 +10,11 @@ import Link from "next/link";
 import { Dock, DockIcon } from "./dock";
 import { DATA } from "@/lib/constants";
 import ThemeToggle from "./theme-toggle";
+import { useTranslations } from "next-intl";
+import LanguageSwitch from "./language-switch";
 
 export default function Navbar() {
+  const t = useTranslations("Labels");
   return (
     <div className="pointer-events-none fixed inset-x-0 bottom-0 z-30 mx-auto mb-4 flex h-full max-h-14 origin-bottom">
       <div className="fixed inset-x-0 bottom-0 h-16 w-full bg-background to-transparent backdrop-blur-lg [-webkit-mask-image:linear-gradient(to_top,black,transparent)] dark:bg-background"></div>
@@ -69,7 +72,20 @@ export default function Navbar() {
               </div>
             </TooltipTrigger>
             <TooltipContent>
-              <p>Change Theme</p>
+              <p>{t("changeTheme")}</p>
+            </TooltipContent>
+          </Tooltip>
+        </DockIcon>
+
+        <DockIcon>
+          <Tooltip>
+            <TooltipTrigger asChild>
+              <div>
+                <LanguageSwitch />
+              </div>
+            </TooltipTrigger>
+            <TooltipContent>
+              <p>{t("changeLanguage")}</p>
             </TooltipContent>
           </Tooltip>
         </DockIcon>

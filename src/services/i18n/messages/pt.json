@@ -1,0 +1,154 @@
+{
+  "Labels": {
+    "changeTheme": "Mudar Tema",
+    "changeLanguage": "Mudar Linguagem"
+  },
+  "Hero": {
+    "greeting": "Olá, eu sou o Renato 👋",
+    "description": "Sou um desenvolvedor apaixonado, trabalhando na construção de soluções inovadoras com tecnologias modernas."
+  },
+
+  "About": {
+    "aboutMe": "Sobre Mim",
+    "resume": "Sou um **desenvolvedor de software** apaixonado e dedicado, sempre buscando aprimorar minhas habilidades e enfrentar novos desafios tecnológicos. Comecei minha carreira como **Desenvolvedor Mobile** com foco em _Android_ e agora sou um **Desenvolvedor Frontend** focado em criar aplicações web responsivas e modernas usando _React_."
+  },
+  "Work": {
+    "title": "Experiência Profissional",
+    "present": "Atual",
+    "experiences": [
+      {
+        "company": "Foursys",
+        "href": "https://foursys.com.br/",
+        "badges": ["Kotlin", "Java", "Android"],
+        "logoUrl": "/foursys.png",
+        "start": "Abril 2022",
+        "end": "Fev 2023",
+        "title": "Desenvolvedor Mobile",
+        "description": "Trabalhando em projetos de desenvolvimento de software como estagiário de desenvolvimento mobile, com foco em Android utilizando Java. Durante o estágio, os tópicos abordados foram:\n\n- Design de Interface\n- Lógica de Programação\n- Java para Android\n- GIT para controle de versão\n- Metodologias de Gerenciamento de Projetos de Tecnologia\n\n**Ferramentas utilizadas:**\n\n- GitHub/GitLab - Repositórios\n- Android Studio - IDE\n- Firebase\n- Metodologia Ágil - Scrum\n- Figma/Miro"
+      },
+      {
+        "company": "Findes",
+        "href": "https://findes.com.br/",
+        "badges": ["React", "Typescript", "Docker"],
+        "logoUrl": "/findes.png",
+        "start": "Ago 2023",
+        "end": "Atual",
+        "title": "Desenvolvedor de Software",
+        "description": "Trabalhando em projetos de desenvolvimento de software como estagiário de desenvolvimento web, com foco no front-end utilizando TypeScript, criando telas responsivas alinhadas com as preferências e solicitações dos clientes. Desenvolvimento de projetos utilizando:\n\n- React (com bibliotecas como Zod e React Hook Form)\n- Vite/Next.js\n- Zod\n- React Hook Form\n- Tanstack Query + Router\n- Styled-Components\n- Material UI\n- TypeScript\n- Docker\n- Metodologia Ágil"
+      }
+    ]
+  },
+  "Education": {
+    "title": "Educação",
+    "records": [
+      {
+        "institution": "Multivix",
+        "href": "https://multivix.edu.br/",
+        "degree": "Análise e Desenvolvimento de Sistemas",
+        "logoUrl": "/multivix.png",
+        "start": "Jul 2022",
+        "end": "Set 2024"
+      },
+      {
+        "institution": "Rocketseat + Sirius",
+        "href": "https://www.rocketseat.com.br/",
+        "degree": "MBA em Desenvolvimento Fullstack",
+        "logoUrl": "/rocketseat.png",
+        "start": "Ago 2024",
+        "end": "Ago 2025"
+      }
+    ]
+  },
+  "Project": {
+    "title": "Meus Projetos",
+    "subtitle": "Confira meu",
+    "highlight": "trabalho mais recente",
+    "description": "Aqui estão alguns dos meus projetos favoritos em que trabalhei.",
+    "projects": [
+      {
+        "title": "Dev-Connect",
+        "href": "https://dev-connect-prod.up.railway.app/",
+        "active": true,
+        "description": "Conecte-se com desenvolvedores de todo o mundo e compartilhe suas ideias e projetos em uma plataforma dinâmica e interativa.",
+        "technologies": [
+          "Next.js",
+          "Typescript",
+          "TailwindCSS",
+          "NextAuth",
+          "Prisma",
+          "Tanstack Query",
+          "Shadcn UI",
+          "TRPC",
+          "T3-Stack",
+          "React Hook Form",
+          "Zod",
+          "Railway",
+          "PostgreSQL"
+        ],
+        "links": [
+          {
+            "type": "Website",
+            "href": "https://dev-connect-prod.up.railway.app/"
+          }
+        ],
+        "image": "",
+        "video": ""
+      },
+      {
+        "title": "ShowScout",
+        "href": "https://spot-show.vercel.app/",
+        "active": false,
+        "description": "ShowScout é uma aplicação web que permite aos usuários fazer login com sua conta Spotify e visualizar os shows futuros de seus artistas favoritos. A aplicação utiliza a API do Spotify para buscar a lista de artistas que o usuário segue e exibe seus próximos concertos usando a API TicketMaster.",
+        "technologies": [
+          "Next.js",
+          "Typescript",
+          "TailwindCSS",
+          "NextAuth",
+          "Shadcn UI",
+          "Spotify API",
+          "TicketMaster API"
+        ],
+        "links": [
+          {
+            "type": "Website",
+            "href": "https://spot-show.vercel.app/"
+          },
+          {
+            "type": "Código",
+            "href": "https://github.com/renatorrocha/ShowScout"
+          }
+        ],
+        "image": "",
+        "video": ""
+      },
+      {
+        "title": "Dg Rei da Palha",
+        "href": "https://dg-rei-das-palhas.up.railway.app/",
+        "active": false,
+        "description": "Um site abrangente para uma empresa de confeitaria local, com uma página de destino envolvente para exibição de produtos e um painel administrativo robusto para gerenciamento eficiente de produtos e transações.",
+        "technologies": [
+          "Next.js",
+          "Typescript",
+          "TailwindCSS",
+          "Clerk",
+          "Prisma",
+          "Tanstack Query",
+          "Shadcn UI",
+          "Framer Motion",
+          "React Hook Form",
+          "Zod",
+          "Railway",
+          "PostgreSQL"
+        ],
+        "links": [
+          {
+            "type": "Website",
+            "href": "https://dg-rei-das-palhas.up.railway.app/"
+          }
+        ],
+        "image": "",
+        "video": ""
+      }
+    ]
+  }
+}
