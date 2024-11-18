@@ -30,6 +30,7 @@ export const DATA = {
     "Docker",
     "PostgreSQL",
     "Node",
+    "Nest",
     "Prisma",
     "Jest",
     "Java",
