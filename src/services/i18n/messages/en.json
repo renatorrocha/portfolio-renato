@@ -89,6 +89,10 @@
           {
             "type": "Website",
             "href": "https://dev-connect-prod.up.railway.app/"
+          },
+          {
+            "type": "Code",
+            "href": "https://github.com/renatorrocha/dev-connect"
           }
         ],
         "image": "",
@@ -140,12 +144,7 @@
           "Railway",
           "PostgreSQL"
         ],
-        "links": [
-          {
-            "type": "Website",
-            "href": "https://dg-rei-das-palhas.up.railway.app/"
-          }
-        ],
+        "links": [],
         "image": "",
         "video": ""
       }

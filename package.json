@@ -21,7 +21,6 @@
     "framer-motion": "^11.3.6",
     "next": "14.2.10",
     "next-intl": "^3.25.1",
-    "next-sitemap": "^4.2.3",
     "next-themes": "^0.3.0",
     "react": "^18",
     "react-dom": "^18",

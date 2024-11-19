@@ -88,7 +88,11 @@
         "links": [
           {
             "type": "Website",
-            "href": "https://dev-connect-prod.up.railway.app/"
+            "href": "https://spot-show.vercel.app/"
+          },
+          {
+            "type": "Code",
+            "href": "https://github.com/renatorrocha/ShowScout"
           }
         ],
         "image": "",
@@ -140,12 +144,7 @@
           "Railway",
           "PostgreSQL"
         ],
-        "links": [
-          {
-            "type": "Website",
-            "href": "https://dg-rei-das-palhas.up.railway.app/"
-          }
-        ],
+        "links": [],
         "image": "",
         "video": ""
       }
