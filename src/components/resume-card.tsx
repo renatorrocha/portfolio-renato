@@ -5,9 +5,9 @@ import { Badge } from "@/components/ui/badge";
 import { Card, CardHeader } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
 import { ChevronRightIcon } from "@radix-ui/react-icons";
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
-import { useState } from "react";
+import React, { useState } from "react";
 import Markdown from "react-markdown";
 
 interface IResumeCard {
@@ -31,6 +31,7 @@ export function ResumeCard({
   period,
   description,
 }: IResumeCard) {
+  // Estado interno para controlar expansão
   const [isExpanded, setIsExpanded] = useState(false);
 
   const handleClick = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
@@ -89,30 +90,27 @@ export function ResumeCard({
             </div>
             {subtitle && <div className="font-sans text-xs">{subtitle}</div>}
           </CardHeader>
-          {description && (
-            <motion.div
-              initial={{ opacity: 0, height: 0 }}
-              animate={{
-                opacity: isExpanded ? 1 : 0,
 
-                height: isExpanded ? "auto" : 0,
-              }}
-              transition={{
-                duration: 0.7,
-                ease: [0.16, 1, 0.3, 1],
-              }}
-              className="mt-2 text-xs sm:text-sm"
-            >
-              <Markdown
-                className={cn(
-                  isExpanded ? "block" : "hidden",
-                  "prose prose-sm sm:prose md:prose-base lg:prose-lg max-w-none",
-                )}
+          <AnimatePresence initial={false}>
+            {isExpanded && description && (
+              <motion.div
+                key="content"
+                initial="collapsed"
+                animate="open"
+                exit="collapsed"
+                variants={{
+                  open: { opacity: 1, height: "auto" },
+                  collapsed: { opacity: 0, height: 0 },
+                }}
+                transition={{ duration: 0.2 }}
+                className="mt-2 text-xs sm:text-sm"
               >
-                {description}
-              </Markdown>
-            </motion.div>
-          )}
+                <Markdown className="prose prose-sm sm:prose md:prose-base lg:prose-lg max-w-none">
+                  {description}
+                </Markdown>
+              </motion.div>
+            )}
+          </AnimatePresence>
         </div>
       </Card>
     </Link>
