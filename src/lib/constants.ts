@@ -36,6 +36,8 @@ export const DATA = {
     "Java",
     "Kotlin",
     "Android",
+    "PHP",
+    "Angular",
     "Nginx",
     "Bun",
     "Elysia",
